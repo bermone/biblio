@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_bermosa_domain_Partie" object="${partie}" path="/parties" z="Yydwv8YhTWrTRrCNYisdAAoIt8w=">
+        <field:display date="true" dateTimePattern="${partie_dtcreation_date_format}" field="dtCreation" id="s_fr_bermosa_domain_Partie_dtCreation" object="${partie}" z="k0TCpfCq1qC8riMQrP8TCSq0FD0="/>
+        <field:display field="titre" id="s_fr_bermosa_domain_Partie_titre" object="${partie}" z="X6wKSiwV6gHNmw8LxIHZpLHVtYo="/>
+        <field:display field="resume" id="s_fr_bermosa_domain_Partie_resume" object="${partie}" z="ZxQPnah1FCRmNlhQ/BGtz0aBWxs="/>
+        <field:display date="true" dateTimePattern="${partie_dtmodification_date_format}" field="dtModification" id="s_fr_bermosa_domain_Partie_dtModification" object="${partie}" z="BODWLqzkx1h41Vaqev8xH8OI4NM="/>
+        <field:display field="chapitre" id="s_fr_bermosa_domain_Partie_chapitre" object="${partie}" z="Jup/s29ansETyo5gLY3Sw+Yi/ZY="/>
+        <field:display field="creerPar" id="s_fr_bermosa_domain_Partie_creerPar" object="${partie}" z="McQohguXHl0jOmV1zPK32e8j7qQ="/>
+        <field:display field="modifierPar" id="s_fr_bermosa_domain_Partie_modifierPar" object="${partie}" z="W8kjb8ID7KwnQRnButgyG7QAVuI="/>
+    </page:show>
+</div>

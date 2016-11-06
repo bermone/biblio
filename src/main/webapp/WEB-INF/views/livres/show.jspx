@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_bermosa_domain_Livre" object="${livre}" path="/livres" z="Rw0HQRyZwB3nkQ3H5guyee6T/K0=">
+        <field:display field="titre" id="s_fr_bermosa_domain_Livre_titre" object="${livre}" z="Elcl/vJNEgFI5NQBIXldQ+cklU8="/>
+        <field:display date="true" dateTimePattern="${livre_dtsortie_date_format}" field="dtSortie" id="s_fr_bermosa_domain_Livre_dtSortie" object="${livre}" z="4w23as9Un4k9benC6ODMDS2+lOs="/>
+        <field:display field="isbn" id="s_fr_bermosa_domain_Livre_isbn" object="${livre}" z="tyh2OMtaxDDg43CN8AUSKPWZIv4="/>
+        <field:display date="true" dateTimePattern="${livre_dtmodification_date_format}" field="dtModification" id="s_fr_bermosa_domain_Livre_dtModification" object="${livre}" z="bOcCdLq6ZtQFde4CcP9p/51psAY="/>
+        <field:display date="true" dateTimePattern="${livre_dtcreation_date_format}" field="dtCreation" id="s_fr_bermosa_domain_Livre_dtCreation" object="${livre}" z="4qlYDbZFMpieHLyO3rqAWB+7vZA="/>
+        <field:display date="true" dateTimePattern="${livre_dtfinusage_date_format}" field="dtFinUsage" id="s_fr_bermosa_domain_Livre_dtFinUsage" object="${livre}" z="waDKdcs1iumLsrCBFVeU3uY1P+U="/>
+        <field:display field="creerPar" id="s_fr_bermosa_domain_Livre_creerPar" object="${livre}" z="I5XmCyhnsnyDtqPAOIsvl1qeFIg="/>
+        <field:display field="modifierPar" id="s_fr_bermosa_domain_Livre_modifierPar" object="${livre}" z="Dv1kvwyCHoRs5i1m6oWPQR2PU6M="/>
+    </page:show>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_bermosa_domain_LivresAuteurs" items="${livresauteurses}" z="cJCG+LunualvVYosFoynZc0JyLo=">
+        <table:table data="${livresauteurses}" id="l_fr_bermosa_domain_LivresAuteurs" path="/livresauteurses" z="UGHDInAc8LTgSeZ73rGQKFreCTY=">
+            <table:column date="true" dateTimePattern="${livresAuteurs_dtfinusage_date_format}" id="c_fr_bermosa_domain_LivresAuteurs_dtFinUsage" property="dtFinUsage" z="1xtCkeK+kVyo/zbHwWCO6jDnPuQ="/>
+            <table:column date="true" dateTimePattern="${livresAuteurs_dtcreation_date_format}" id="c_fr_bermosa_domain_LivresAuteurs_dtCreation" property="dtCreation" z="e0dFOJwTOnb+ak0PyGunCdIrSyM="/>
+            <table:column id="c_fr_bermosa_domain_LivresAuteurs_auteur" property="auteur" z="F2rl1c+kFQyQvMG4wuk4oKaVUco="/>
+            <table:column id="c_fr_bermosa_domain_LivresAuteurs_livre" property="livre" z="DsALhXoe1fA+IyzQVwlssefNZV8="/>
+        </table:table>
+    </page:list>
+</div>

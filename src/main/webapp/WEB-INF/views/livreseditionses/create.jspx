@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_fr_bermosa_domain_LivresEditions" modelAttribute="livresEditions" path="/livreseditionses" render="${empty dependencies}" z="YpNX8p80gxUFYIlQ4OtQsFV7Gak=">
+        <field:datetime dateTimePattern="${livresEditions_dtfinusage_date_format}" field="dtFinUsage" id="c_fr_bermosa_domain_LivresEditions_dtFinUsage" z="b8biRg5hLtS5NMbysvnwXW/82KI="/>
+        <field:datetime dateTimePattern="${livresEditions_dtcreation_date_format}" field="dtCreation" id="c_fr_bermosa_domain_LivresEditions_dtCreation" required="true" z="Umpoi4A+TMyMMDtmze9OspDMUk4="/>
+        <field:select field="edition" id="c_fr_bermosa_domain_LivresEditions_edition" itemValue="id" items="${editions}" path="/editions" required="true" z="Rcs/RlKaVlDL+MIFY7TRp6t8J2Y="/>
+        <field:select field="livre" id="c_fr_bermosa_domain_LivresEditions_livre" itemValue="id" items="${livres}" path="/livres" required="true" z="3E0kS2fIuSm7qwnzaQj389rj9as="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_fr_bermosa_domain_LivresEditions" render="${not empty dependencies}" z="nOBCZCAk6XZnakpQCDS9Ku1U0v8="/>
+</div>

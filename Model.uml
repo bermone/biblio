@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_EyVeYKB2EeakIfNUG_aldw">
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_IfE14KB2EeakIfNUG_aldw" name="String" isFinalSpecialization="true" redefinedClassifier="_IfE14KB2EeakIfNUG_aldw"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Pux90KB2EeakIfNUG_aldw" name="Date" isFinalSpecialization="true" redefinedClassifier="_Pux90KB2EeakIfNUG_aldw"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_U4sd8KB2EeakIfNUG_aldw" name="Integer" isFinalSpecialization="true" redefinedClassifier="_U4sd8KB2EeakIfNUG_aldw"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_a6CVUKB2EeakIfNUG_aldw" name="boolean" isFinalSpecialization="true" redefinedClassifier="_a6CVUKB2EeakIfNUG_aldw"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_oe62oKB2EeakIfNUG_aldw" name="fr.bermosa.domain">
+    <packagedElement xmi:type="uml:Class" xmi:id="_2XGucKB2EeakIfNUG_aldw" name="Role">
+      <ownedAttribute xmi:id="_4kTl0KB2EeakIfNUG_aldw" name="role" type="_IfE14KB2EeakIfNUG_aldw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_67xMcKB2EeakIfNUG_aldw" value="ROLE_USER"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_9x1aoKB2EeakIfNUG_aldw" name="dtCreation" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_ldsE0KB3EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Fd-m8KB3EeakIfNUG_aldw" value="new Date()"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_IjRj8KB3EeakIfNUG_aldw" name="Acteur">
+      <ownedAttribute xmi:id="_LbqtYKB3EeakIfNUG_aldw" name="nom" type="_IfE14KB2EeakIfNUG_aldw"/>
+      <ownedAttribute xmi:id="_OjwfsKB3EeakIfNUG_aldw" name="prenom" type="_IfE14KB2EeakIfNUG_aldw"/>
+      <ownedAttribute xmi:id="_THRuMKB3EeakIfNUG_aldw" name="password" type="_IfE14KB2EeakIfNUG_aldw"/>
+      <ownedAttribute xmi:id="_WCsWcKB3EeakIfNUG_aldw" name="dtInscription" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_h98ngKB3EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_hett0KB3EeakIfNUG_aldw" value="new Date()"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pxxwMKB3EeakIfNUG_aldw" name="enabled" type="_a6CVUKB2EeakIfNUG_aldw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_uHSX4KB3EeakIfNUG_aldw" value="true"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_MdR3MKB-EeakIfNUG_aldw" name="username" type="_IfE14KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_7D-LEKQ4EeajS5tq7cdxfw" name="@Id"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N91D8KB-EeakIfNUG_aldw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_5wOJ4KB3EeakIfNUG_aldw" name="Groupe">
+      <ownedAttribute xmi:id="_8xb4IKB3EeakIfNUG_aldw" name="intitule" type="_IfE14KB2EeakIfNUG_aldw"/>
+      <ownedAttribute xmi:id="__UHQQKB3EeakIfNUG_aldw" name="dtCreation" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_XgRSQKB4EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZGsdgKB4EeakIfNUG_aldw" value="new Date()"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KfAbYKB4EeakIfNUG_aldw" name="dtFinUsage" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_bP-eMKB4EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V29LEKB4EeakIfNUG_aldw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Pmst8KB4EeakIfNUG_aldw" name="dtModification" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_c74mYKB4EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UEr8MKB4EeakIfNUG_aldw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_kbjc8KB4EeakIfNUG_aldw" name="LivresGroupes">
+      <ownedAttribute xmi:id="_p8FGQKB4EeakIfNUG_aldw" name="dtFinUsage" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_p8FGQaB4EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p8FGQqB4EeakIfNUG_aldw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_p8FtUKB4EeakIfNUG_aldw" name="dtCreation" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_p8FtUaB4EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_p8FtUqB4EeakIfNUG_aldw" value="new Date()"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vMny0KB4EeakIfNUG_aldw" memberEnd="_vMny0aB4EeakIfNUG_aldw _vMny1KB4EeakIfNUG_aldw" navigableOwnedEnd="_vMny0aB4EeakIfNUG_aldw _vMny1KB4EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_vMny0aB4EeakIfNUG_aldw" name="groupe" type="_5wOJ4KB3EeakIfNUG_aldw" association="_vMny0KB4EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vMny0qB4EeakIfNUG_aldw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vMny06B4EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_vMny1KB4EeakIfNUG_aldw" name="livresGroupess" type="_kbjc8KB4EeakIfNUG_aldw" association="_vMny0KB4EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vMny1aB4EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vMny1qB4EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3R1mcKB4EeakIfNUG_aldw" name="Auteur">
+      <ownedAttribute xmi:id="_9_9EQKB4EeakIfNUG_aldw" name="prenom" type="_IfE14KB2EeakIfNUG_aldw"/>
+      <ownedAttribute xmi:id="_9_9rUKB4EeakIfNUG_aldw" name="nom" type="_IfE14KB2EeakIfNUG_aldw"/>
+      <ownedAttribute xmi:id="_Bfg7YKB5EeakIfNUG_aldw" name="dtModification" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_Bfg7YaB5EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bfg7YqB5EeakIfNUG_aldw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Bfg7Y6B5EeakIfNUG_aldw" name="dtCreation" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_Bfg7ZKB5EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Bfg7ZaB5EeakIfNUG_aldw" value="new Date()"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Bfg7ZqB5EeakIfNUG_aldw" name="dtFinUsage" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_Bfg7Z6B5EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bfg7aKB5EeakIfNUG_aldw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G-noYKB5EeakIfNUG_aldw" name="Livre">
+      <ownedAttribute xmi:id="_N-0UsKB5EeakIfNUG_aldw" name="titre" type="_IfE14KB2EeakIfNUG_aldw"/>
+      <ownedAttribute xmi:id="_SS1HkKB5EeakIfNUG_aldw" name="dtSortie" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_reVGsKB5EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_WTUhgKB5EeakIfNUG_aldw" name="isbn" type="_IfE14KB2EeakIfNUG_aldw"/>
+      <ownedAttribute xmi:id="_asjLkKB5EeakIfNUG_aldw" name="dtModification" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_asjLkaB5EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_asjLkqB5EeakIfNUG_aldw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_asjLk6B5EeakIfNUG_aldw" name="dtCreation" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_asjLlKB5EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_asjLlaB5EeakIfNUG_aldw" value="new Date()"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_asjLlqB5EeakIfNUG_aldw" name="dtFinUsage" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_asjLl6B5EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_asjLmKB5EeakIfNUG_aldw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_dX1tIKB5EeakIfNUG_aldw" memberEnd="_dX1tIaB5EeakIfNUG_aldw _dX1tJKB5EeakIfNUG_aldw" navigableOwnedEnd="_dX1tIaB5EeakIfNUG_aldw _dX1tJKB5EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_dX1tIaB5EeakIfNUG_aldw" name="livre" type="_G-noYKB5EeakIfNUG_aldw" association="_dX1tIKB5EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dX1tIqB5EeakIfNUG_aldw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dX1tI6B5EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_dX1tJKB5EeakIfNUG_aldw" name="livresGroupes" type="_kbjc8KB4EeakIfNUG_aldw" association="_dX1tIKB5EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dX1tJaB5EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dX1tJqB5EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lCdPcKB5EeakIfNUG_aldw" name="LivresAuteurs">
+      <ownedAttribute xmi:id="_xtDSwKB5EeakIfNUG_aldw" name="dtFinUsage" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_xtDSwaB5EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xtDSwqB5EeakIfNUG_aldw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_xtDSw6B5EeakIfNUG_aldw" name="dtCreation" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_xtDSxKB5EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_xtDSxaB5EeakIfNUG_aldw" value="new Date()"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_2rwBYKB5EeakIfNUG_aldw" memberEnd="_2rwBYaB5EeakIfNUG_aldw _2rwBZKB5EeakIfNUG_aldw" navigableOwnedEnd="_2rwBYaB5EeakIfNUG_aldw _2rwBZKB5EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_2rwBYaB5EeakIfNUG_aldw" name="livre" type="_G-noYKB5EeakIfNUG_aldw" association="_2rwBYKB5EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2rwBYqB5EeakIfNUG_aldw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2rwBY6B5EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_2rwBZKB5EeakIfNUG_aldw" name="livresAuteurs" type="_lCdPcKB5EeakIfNUG_aldw" association="_2rwBYKB5EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2rwBZaB5EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2rwBZqB5EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_6lkLkKB5EeakIfNUG_aldw" memberEnd="_6lkLkaB5EeakIfNUG_aldw _6lkLlKB5EeakIfNUG_aldw" navigableOwnedEnd="_6lkLkaB5EeakIfNUG_aldw _6lkLlKB5EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_6lkLkaB5EeakIfNUG_aldw" name="auteur" type="_3R1mcKB4EeakIfNUG_aldw" association="_6lkLkKB5EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6lkLkqB5EeakIfNUG_aldw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6lkLk6B5EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_6lkLlKB5EeakIfNUG_aldw" name="livresAuteurs" type="_lCdPcKB5EeakIfNUG_aldw" association="_6lkLkKB5EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6lkLlaB5EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6lkLlqB5EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_DeiXYKB6EeakIfNUG_aldw" name="Edition">
+      <ownedAttribute xmi:id="_G3_mgKB6EeakIfNUG_aldw" name="intitule" type="_IfE14KB2EeakIfNUG_aldw"/>
+      <ownedAttribute xmi:id="_KnTJ0KB6EeakIfNUG_aldw" name="dtFinUsage" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_KnTJ0aB6EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KnTJ0qB6EeakIfNUG_aldw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KnTJ06B6EeakIfNUG_aldw" name="dtCreation" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_KnTJ1KB6EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_KnTJ1aB6EeakIfNUG_aldw" value="new Date()"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KnTJ1qB6EeakIfNUG_aldw" name="dtModification" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_KnTJ16B6EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KnTJ2KB6EeakIfNUG_aldw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Ns1-cKB6EeakIfNUG_aldw" name="LivresEditions">
+      <ownedAttribute xmi:id="_SDhq0KB6EeakIfNUG_aldw" name="dtFinUsage" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_SDhq0aB6EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SDhq0qB6EeakIfNUG_aldw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_SDiR4KB6EeakIfNUG_aldw" name="dtCreation" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_SDiR4aB6EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_SDiR4qB6EeakIfNUG_aldw" value="new Date()"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_UtO4AKB6EeakIfNUG_aldw" memberEnd="_UtO4AaB6EeakIfNUG_aldw _UtO4BKB6EeakIfNUG_aldw" navigableOwnedEnd="_UtO4AaB6EeakIfNUG_aldw _UtO4BKB6EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_UtO4AaB6EeakIfNUG_aldw" name="edition" type="_DeiXYKB6EeakIfNUG_aldw" association="_UtO4AKB6EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UtO4AqB6EeakIfNUG_aldw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UtO4A6B6EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_UtO4BKB6EeakIfNUG_aldw" name="livresEditions" type="_Ns1-cKB6EeakIfNUG_aldw" association="_UtO4AKB6EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UtO4BaB6EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UtO4BqB6EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_X-XRkKB6EeakIfNUG_aldw" memberEnd="_X-XRkaB6EeakIfNUG_aldw _X-XRlKB6EeakIfNUG_aldw" navigableOwnedEnd="_X-XRkaB6EeakIfNUG_aldw _X-XRlKB6EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_X-XRkaB6EeakIfNUG_aldw" name="livre" type="_G-noYKB5EeakIfNUG_aldw" association="_X-XRkKB6EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X-XRkqB6EeakIfNUG_aldw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X-XRk6B6EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_X-XRlKB6EeakIfNUG_aldw" name="livresEditions" type="_Ns1-cKB6EeakIfNUG_aldw" association="_X-XRkKB6EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X-XRlaB6EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X-XRlqB6EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jYfLgKB6EeakIfNUG_aldw" name="Chapitre">
+      <ownedAttribute xmi:id="_tPK8wKB6EeakIfNUG_aldw" name="dtModification" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_tPK8waB6EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tPK8wqB6EeakIfNUG_aldw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_tPK8w6B6EeakIfNUG_aldw" name="titre" type="_IfE14KB2EeakIfNUG_aldw"/>
+      <ownedAttribute xmi:id="_tPK8xKB6EeakIfNUG_aldw" name="dtCreation" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_tPK8xaB6EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_tPK8xqB6EeakIfNUG_aldw" value="new Date()"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_uHnAoKB6EeakIfNUG_aldw" name="resume" type="_IfE14KB2EeakIfNUG_aldw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_y5IO4KB6EeakIfNUG_aldw" name="Partie">
+      <ownedAttribute xmi:id="_60rwMKB6EeakIfNUG_aldw" name="dtCreation" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_60rwMaB6EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_60rwMqB6EeakIfNUG_aldw" value="new Date()"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_60rwM6B6EeakIfNUG_aldw" name="titre" type="_IfE14KB2EeakIfNUG_aldw"/>
+      <ownedAttribute xmi:id="_60rwNKB6EeakIfNUG_aldw" name="resume" type="_IfE14KB2EeakIfNUG_aldw"/>
+      <ownedAttribute xmi:id="_60rwNaB6EeakIfNUG_aldw" name="dtModification" type="_Pux90KB2EeakIfNUG_aldw">
+        <nameExpression xmi:id="_60rwNqB6EeakIfNUG_aldw" name="@DateTimeFormat(style=&quot;S-&quot;)"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_60rwN6B6EeakIfNUG_aldw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_9hmpcKB6EeakIfNUG_aldw" memberEnd="_9hmpcaB6EeakIfNUG_aldw _9hmpdKB6EeakIfNUG_aldw" navigableOwnedEnd="_9hmpcaB6EeakIfNUG_aldw _9hmpdKB6EeakIfNUG_aldw">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_9hmpcaB6EeakIfNUG_aldw" name="parties" type="_y5IO4KB6EeakIfNUG_aldw" isOrdered="true" association="_9hmpcKB6EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9hmpcqB6EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9hmpc6B6EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_9hmpdKB6EeakIfNUG_aldw" name="chapitre" type="_jYfLgKB6EeakIfNUG_aldw" association="_9hmpcKB6EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9hmpdaB6EeakIfNUG_aldw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9hmpdqB6EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_b8W7sKB7EeakIfNUG_aldw" memberEnd="_b8W7saB7EeakIfNUG_aldw _b8XiwqB7EeakIfNUG_aldw" navigableOwnedEnd="_b8XiwqB7EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_b8W7saB7EeakIfNUG_aldw" name="auteurs" type="_3R1mcKB4EeakIfNUG_aldw" association="_b8W7sKB7EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b8XiwKB7EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b8XiwaB7EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_b8XiwqB7EeakIfNUG_aldw" name="creerPar" type="_IjRj8KB3EeakIfNUG_aldw" association="_b8W7sKB7EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b8Xiw6B7EeakIfNUG_aldw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b8XixKB7EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_iGAagKB7EeakIfNUG_aldw" memberEnd="_iGAagaB7EeakIfNUG_aldw _iGBBkaB7EeakIfNUG_aldw" navigableOwnedEnd="_iGBBkaB7EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_iGAagaB7EeakIfNUG_aldw" name="auteurs" type="_3R1mcKB4EeakIfNUG_aldw" association="_iGAagKB7EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iGAagqB7EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iGBBkKB7EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_iGBBkaB7EeakIfNUG_aldw" name="modifierPar" type="_IjRj8KB3EeakIfNUG_aldw" association="_iGAagKB7EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iGBBkqB7EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iGBBk6B7EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pvWxgKB7EeakIfNUG_aldw" memberEnd="_pvXYkKB7EeakIfNUG_aldw _pvXYk6B7EeakIfNUG_aldw" navigableOwnedEnd="_pvXYk6B7EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_pvXYkKB7EeakIfNUG_aldw" name="editions" type="_DeiXYKB6EeakIfNUG_aldw" association="_pvWxgKB7EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pvXYkaB7EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pvXYkqB7EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_pvXYk6B7EeakIfNUG_aldw" name="creerPar" type="_IjRj8KB3EeakIfNUG_aldw" association="_pvWxgKB7EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pvXYlKB7EeakIfNUG_aldw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pvX_oKB7EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_syPTsKB7EeakIfNUG_aldw" memberEnd="_syP6wKB7EeakIfNUG_aldw _syRI4qB7EeakIfNUG_aldw" navigableOwnedEnd="_syRI4qB7EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_syP6wKB7EeakIfNUG_aldw" name="editions" type="_DeiXYKB6EeakIfNUG_aldw" association="_syPTsKB7EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_syRI4KB7EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_syRI4aB7EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_syRI4qB7EeakIfNUG_aldw" name="modifierPar" type="_IjRj8KB3EeakIfNUG_aldw" association="_syPTsKB7EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_syRv8KB7EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_syRv8aB7EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_0ZziAKB7EeakIfNUG_aldw" memberEnd="_0ZziAaB7EeakIfNUG_aldw _0Z0wIKB7EeakIfNUG_aldw" navigableOwnedEnd="_0Z0wIKB7EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_0ZziAaB7EeakIfNUG_aldw" name="livres" type="_G-noYKB5EeakIfNUG_aldw" association="_0ZziAKB7EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0Z0JEKB7EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0Z0JEaB7EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_0Z0wIKB7EeakIfNUG_aldw" name="creerPar" type="_IjRj8KB3EeakIfNUG_aldw" association="_0ZziAKB7EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0Z0wIaB7EeakIfNUG_aldw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0Z0wIqB7EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3-MOwKB7EeakIfNUG_aldw" memberEnd="_3-MOwaB7EeakIfNUG_aldw _3-Nc4qB7EeakIfNUG_aldw" navigableOwnedEnd="_3-Nc4qB7EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_3-MOwaB7EeakIfNUG_aldw" name="livres" type="_G-noYKB5EeakIfNUG_aldw" association="_3-MOwKB7EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3-Nc4KB7EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3-Nc4aB7EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_3-Nc4qB7EeakIfNUG_aldw" name="modifierPar" type="_IjRj8KB3EeakIfNUG_aldw" association="_3-MOwKB7EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3-Nc46B7EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3-OD8KB7EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_8rSQAKB7EeakIfNUG_aldw" memberEnd="_8rS3EKB7EeakIfNUG_aldw _8rTeIqB7EeakIfNUG_aldw" navigableOwnedEnd="_8rTeIqB7EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_8rS3EKB7EeakIfNUG_aldw" name="groupes" type="_5wOJ4KB3EeakIfNUG_aldw" association="_8rSQAKB7EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8rTeIKB7EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8rTeIaB7EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_8rTeIqB7EeakIfNUG_aldw" name="creerPar" type="_IjRj8KB3EeakIfNUG_aldw" association="_8rSQAKB7EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8rUFMKB7EeakIfNUG_aldw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8rUsQKB7EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-ihecKB7EeakIfNUG_aldw" memberEnd="_-ihecaB7EeakIfNUG_aldw _-iiskqB7EeakIfNUG_aldw" navigableOwnedEnd="_-iiskqB7EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_-ihecaB7EeakIfNUG_aldw" name="groupes" type="_5wOJ4KB3EeakIfNUG_aldw" association="_-ihecKB7EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-iiskKB7EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-iiskaB7EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_-iiskqB7EeakIfNUG_aldw" name="modifierPar" type="_IjRj8KB3EeakIfNUG_aldw" association="_-ihecKB7EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-ij6sKB7EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-ij6saB7EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FwF4YKB8EeakIfNUG_aldw" memberEnd="_FwGfcKB8EeakIfNUG_aldw _FwHGgKB8EeakIfNUG_aldw" navigableOwnedEnd="_FwHGgKB8EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_FwGfcKB8EeakIfNUG_aldw" name="chapitres" type="_jYfLgKB6EeakIfNUG_aldw" association="_FwF4YKB8EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FwGfcaB8EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FwGfcqB8EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_FwHGgKB8EeakIfNUG_aldw" name="creerPar" type="_IjRj8KB3EeakIfNUG_aldw" association="_FwF4YKB8EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FwHGgaB8EeakIfNUG_aldw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FwHGgqB8EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_HYs08KB8EeakIfNUG_aldw" memberEnd="_HYtcAKB8EeakIfNUG_aldw _HYvRMqB8EeakIfNUG_aldw" navigableOwnedEnd="_HYvRMqB8EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_HYtcAKB8EeakIfNUG_aldw" name="chapitres" type="_jYfLgKB6EeakIfNUG_aldw" association="_HYs08KB8EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HYvRMKB8EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HYvRMaB8EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_HYvRMqB8EeakIfNUG_aldw" name="modifierPar" type="_IjRj8KB3EeakIfNUG_aldw" association="_HYs08KB8EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HYwfUKB8EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HYxGYKB8EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_LMnLcKB8EeakIfNUG_aldw" memberEnd="_LMnygKB8EeakIfNUG_aldw _LMnyg6B8EeakIfNUG_aldw" navigableOwnedEnd="_LMnyg6B8EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_LMnygKB8EeakIfNUG_aldw" name="parties" type="_y5IO4KB6EeakIfNUG_aldw" association="_LMnLcKB8EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LMnygaB8EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LMnygqB8EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_LMnyg6B8EeakIfNUG_aldw" name="creerPar" type="_IjRj8KB3EeakIfNUG_aldw" association="_LMnLcKB8EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LMoZkKB8EeakIfNUG_aldw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LMoZkaB8EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NLRQgKB8EeakIfNUG_aldw" memberEnd="_NLR3kKB8EeakIfNUG_aldw _NLSeoqB8EeakIfNUG_aldw" navigableOwnedEnd="_NLSeoqB8EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_NLR3kKB8EeakIfNUG_aldw" name="parties" type="_y5IO4KB6EeakIfNUG_aldw" association="_NLRQgKB8EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NLSeoKB8EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NLSeoaB8EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_NLSeoqB8EeakIfNUG_aldw" name="modifierPar" type="_IjRj8KB3EeakIfNUG_aldw" association="_NLRQgKB8EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NLTFsKB8EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NLZMUKB8EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_LsH8gKB9EeakIfNUG_aldw" memberEnd="_LsH8gaB9EeakIfNUG_aldw _LsH8hKB9EeakIfNUG_aldw" navigableOwnedEnd="_LsH8gaB9EeakIfNUG_aldw _LsH8hKB9EeakIfNUG_aldw">
+      <ownedEnd xmi:id="_LsH8gaB9EeakIfNUG_aldw" name="livre" type="_G-noYKB5EeakIfNUG_aldw" association="_LsH8gKB9EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LsH8gqB9EeakIfNUG_aldw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LsH8g6B9EeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_LsH8hKB9EeakIfNUG_aldw" name="chapitres" type="_jYfLgKB6EeakIfNUG_aldw" isOrdered="true" association="_LsH8gKB9EeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LsH8haB9EeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LsH8hqB9EeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Hg5VYKCBEeakIfNUG_aldw" memberEnd="_Hg5VYaCBEeakIfNUG_aldw _Hg5VZKCBEeakIfNUG_aldw" navigableOwnedEnd="_Hg5VYaCBEeakIfNUG_aldw _Hg5VZKCBEeakIfNUG_aldw">
+      <ownedEnd xmi:id="_Hg5VYaCBEeakIfNUG_aldw" name="acteur" type="_IjRj8KB3EeakIfNUG_aldw" association="_Hg5VYKCBEeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Hg5VYqCBEeakIfNUG_aldw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Hg5VY6CBEeakIfNUG_aldw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_Hg5VZKCBEeakIfNUG_aldw" name="roles" type="_2XGucKB2EeakIfNUG_aldw" association="_Hg5VYKCBEeakIfNUG_aldw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Hg5VZaCBEeakIfNUG_aldw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Hg5VZqCBEeakIfNUG_aldw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_rRV68KB2EeakIfNUG_aldw" name="fr.bermosa.api"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_v7NCAKB2EeakIfNUG_aldw" name="fr.bermosa.services"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_wDMmwKB-EeakIfNUG_aldw" name="Long" isFinalSpecialization="true" redefinedClassifier="_wDMmwKB-EeakIfNUG_aldw"/>
+</uml:Model>

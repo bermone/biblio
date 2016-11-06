@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_livresauteurs" z="cufnyxyQkrOoCUot0kfoCqwSYI0=">
+            <menu:item id="i_livresauteurs_new" messageCode="global_menu_new" url="/livresauteurses?form" z="RVzTyGsMwhb916rSj1g+VlOePXA="/>
+            <menu:item id="i_livresauteurs_list" messageCode="global_menu_list" url="/livresauteurses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="pGeSG59rHHaU9jv1sfonyCKKQhk="/>
+        </menu:category>
+        <menu:category id="c_livre" z="dBjn6vyLsOhOAwog0fRLUy3VbPc=">
+            <menu:item id="i_livre_new" messageCode="global_menu_new" url="/livres?form" z="TEb0oidmcWfXVQzMgH6z30Y8qLI="/>
+            <menu:item id="i_livre_list" messageCode="global_menu_list" url="/livres?page=1&amp;size=${empty param.size ? 10 : param.size}" z="kyZ2LQ6fHBQ62v9PQxX+xsI+v0g="/>
+        </menu:category>
+        <menu:category id="c_livreseditions" z="4NL4zVRxo+WgnFn6bNTPsLGqGC8=">
+            <menu:item id="i_livreseditions_new" messageCode="global_menu_new" url="/livreseditionses?form" z="RsK7JXOPdOd8NoXE9zrRINwhqyM="/>
+            <menu:item id="i_livreseditions_list" messageCode="global_menu_list" url="/livreseditionses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="fsZa2kiq4ueqa5z9AVis5n8LUgw="/>
+        </menu:category>
+        <menu:category id="c_groupe" z="P37Osd/CVWmgXr4QeJQajRZ4AfM=">
+            <menu:item id="i_groupe_new" messageCode="global_menu_new" url="/groupes?form" z="x3y6Oiqibcj6+IT7bllDLk2vUig="/>
+            <menu:item id="i_groupe_list" messageCode="global_menu_list" url="/groupes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="FdwIlhTvqAm6HppcnuGHUqF3EDc="/>
+        </menu:category>
+        <menu:category id="c_acteur" z="JlSTTAE/lJzFSsMJ/WKXv6vUA0M=">
+            <menu:item id="i_acteur_new" messageCode="global_menu_new" url="/acteurs?form" z="JIHRWor/D7vLVMO4bJBYAhXLELw="/>
+            <menu:item id="i_acteur_list" messageCode="global_menu_list" url="/acteurs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="lPCSH0sNeB12ox5I0TC3draTvvg="/>
+        </menu:category>
+        <menu:category id="c_role" z="LPygIx2EuEArCzqsfpQQev0lHyc=">
+            <menu:item id="i_role_new" messageCode="global_menu_new" url="/roles?form" z="WNB2HvnzvtbOA3r7qL1gqrUOq8g="/>
+            <menu:item id="i_role_list" messageCode="global_menu_list" url="/roles?page=1&amp;size=${empty param.size ? 10 : param.size}" z="DVFtqj4xcHbEiJh6bgI7Tyre3ec="/>
+        </menu:category>
+        <menu:category id="c_chapitre" z="JcUJkU10oJLC453FN6PFFAQaTfo=">
+            <menu:item id="i_chapitre_new" messageCode="global_menu_new" url="/chapitres?form" z="CYAKuiC08XZYtDp4DVARdyuuxfc="/>
+            <menu:item id="i_chapitre_list" messageCode="global_menu_list" url="/chapitres?page=1&amp;size=${empty param.size ? 10 : param.size}" z="OyewVJwM5EN2c5SNpLUor/BRMsU="/>
+        </menu:category>
+        <menu:category id="c_edition" z="kS7lmRATXAor7+RugYOrENiwH90=">
+            <menu:item id="i_edition_new" messageCode="global_menu_new" url="/editions?form" z="HJRRGf3NHbPeUcgT+Rz9o1/mluU="/>
+            <menu:item id="i_edition_list" messageCode="global_menu_list" url="/editions?page=1&amp;size=${empty param.size ? 10 : param.size}" z="U1Wfc4pgkTzu21fJRbLN02KID98="/>
+        </menu:category>
+        <menu:category id="c_livresgroupes" z="TLBWMZVS2YbclxBmGNq1qNzj3Do=">
+            <menu:item id="i_livresgroupes_new" messageCode="global_menu_new" url="/livresgroupeses?form" z="hyw3ryWjUnAc+8lo1QyLQYDEl8c="/>
+            <menu:item id="i_livresgroupes_list" messageCode="global_menu_list" url="/livresgroupeses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="BqXiRZHLLUG8Nxp6z/gmO6EBQ7c="/>
+        </menu:category>
+        <menu:category id="c_partie" z="AfHy4GdXKEiBuJcpUhQLoNcSTIU=">
+            <menu:item id="i_partie_new" messageCode="global_menu_new" url="/parties?form" z="62pbWrfyRLhMxtr0nUQqZBR00Zo="/>
+            <menu:item id="i_partie_list" messageCode="global_menu_list" url="/parties?page=1&amp;size=${empty param.size ? 10 : param.size}" z="RPvsoRJmaanH/nW7VvAVK+2694Y="/>
+        </menu:category>
+        <menu:category id="c_auteur" z="370J8JamTgTfAeuDW42GzljAyDQ=">
+            <menu:item id="i_auteur_new" messageCode="global_menu_new" url="/auteurs?form" z="mK0pVQKQaWquvYOWufO05N+f17M="/>
+            <menu:item id="i_auteur_list" messageCode="global_menu_list" url="/auteurs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="EDw5+ltJ34s2vfwLg3qZtIRgdm0="/>
+        </menu:category>
+    </menu:menu>
+</div>

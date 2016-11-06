@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:sec="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.1.xsd
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+   <beans>
+	    <!-- HTTP security configurations -->
+		<sec:http pattern="/services/**" security="none"/>
+			
+	    <!-- HTTP security configurations -->
+	    <sec:http auto-config="true" use-expressions="true">
+	        <sec:form-login login-processing-url="/resources/j_spring_security_check" login-page="/login" authentication-failure-url="/login?login_error=t" />
+	        <sec:logout logout-url="/resources/j_spring_security_logout" />
+	        <!-- Configure these elements to secure URIs in your application -->
+	        <sec:intercept-url pattern="/statusSwitch" access="permitAll"/><!-- DO NOT ALTER OR REMOVE -->
+			<sec:intercept-url pattern="/surveillance.html" access="permitAll"/><!-- DO NOT ALTER OR REMOVE -->
+			<sec:intercept-url pattern="/services/**" access="permitAll"/><!-- be careful changing this -->
+			<sec:intercept-url pattern="/login**" access="permitAll"/><!-- be careful changing this -->
+			<sec:intercept-url pattern="/resources/**" access="permitAll"/>
+			<sec:intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN') or hasRole('ROLE_SUPER_ADMIN')"/>
+			<sec:intercept-url pattern="/biblio/**" access="hasRole('ROLE_USER') or hasRole('ROLE_ADMIN') or hasRole('ROLE_SUPER_ADMIN')" />	       
+	    </sec:http>
+	    <sec:global-method-security mode="aspectj" secured-annotations="enabled" />
+    </beans>
+    
+    <beans profile="DEV">
+	    <!-- Configure Authentication mechanism -->
+	    <sec:authentication-manager>
+	        <!-- SHA-256 values can be produced using 'echo -n your_desired_password | sha256sum' (using normal *nix environments) -->
+	        <sec:authentication-provider>
+	            <sec:password-encoder hash="sha-256" />
+	            <sec:jdbc-user-service	data-source-ref="dataSource"
+					users-by-username-query="select username,password,enabled from acteur where username=?"
+					authorities-by-username-query="select u1.username, u2.role from acteur u1, role u2 where u1.username = u2.acteur and u1.username =?" />
+	        </sec:authentication-provider>
+	    </sec:authentication-manager>
+    </beans>
+</beans>

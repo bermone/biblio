@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_bermosa_domain_Chapitre" object="${chapitre}" path="/chapitres" z="isTIO26+aqWmisshg6T1qOcggpM=">
+        <field:display date="true" dateTimePattern="${chapitre_dtmodification_date_format}" field="dtModification" id="s_fr_bermosa_domain_Chapitre_dtModification" object="${chapitre}" z="1OP2Aq4SBTH+Yd09PLkWCaGdZIo="/>
+        <field:display field="titre" id="s_fr_bermosa_domain_Chapitre_titre" object="${chapitre}" z="K2cS9ggH7dugHMLBI0t4sedRp5k="/>
+        <field:display date="true" dateTimePattern="${chapitre_dtcreation_date_format}" field="dtCreation" id="s_fr_bermosa_domain_Chapitre_dtCreation" object="${chapitre}" z="xhW3jpWY0fu5onq3a9K/jAIZ2uM="/>
+        <field:display field="resume" id="s_fr_bermosa_domain_Chapitre_resume" object="${chapitre}" z="qV+AfEo+RxmpHRpPlhPTcvMp9lc="/>
+        <field:display field="creerPar" id="s_fr_bermosa_domain_Chapitre_creerPar" object="${chapitre}" z="H1LVfFr7HxcoEC/Vp7B6kCrAX3g="/>
+        <field:display field="livre" id="s_fr_bermosa_domain_Chapitre_livre" object="${chapitre}" z="ytdjs9CZYSwU5ujdaUeKL0bwSss="/>
+        <field:display field="modifierPar" id="s_fr_bermosa_domain_Chapitre_modifierPar" object="${chapitre}" z="ufZZxY3R40C4e//w+HSMpvXA9jQ="/>
+    </page:show>
+</div>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_bermosa_domain_Role" object="${role}" path="/roles" z="IwHXIqpa0Mr6Rt3qvKoRhxdrsEg=">
+        <field:display field="role" id="s_fr_bermosa_domain_Role_role" object="${role}" z="ONkyIAx3KjneMJ9Kz0m4YhNUbDY="/>
+        <field:display date="true" dateTimePattern="${role_dtcreation_date_format}" field="dtCreation" id="s_fr_bermosa_domain_Role_dtCreation" object="${role}" z="88NcfItjEnnCgqAaOStPlEClqBY="/>
+        <field:display field="acteur" id="s_fr_bermosa_domain_Role_acteur" object="${role}" z="4I9nSwoas424IxCuvhEon60pEZE="/>
+    </page:show>
+</div>

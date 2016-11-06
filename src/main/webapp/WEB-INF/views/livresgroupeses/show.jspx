@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_bermosa_domain_LivresGroupes" object="${livresgroupes}" path="/livresgroupeses" z="o7fMcCkxFHKb+rIbsAFzBsWS3Fg=">
+        <field:display date="true" dateTimePattern="${livresGroupes_dtfinusage_date_format}" field="dtFinUsage" id="s_fr_bermosa_domain_LivresGroupes_dtFinUsage" object="${livresgroupes}" z="ofinQzc3afpfap9Zkv2FiYa3DhI="/>
+        <field:display date="true" dateTimePattern="${livresGroupes_dtcreation_date_format}" field="dtCreation" id="s_fr_bermosa_domain_LivresGroupes_dtCreation" object="${livresgroupes}" z="h29sh4+XQNSXQnZ6h97y7lrOYQ8="/>
+        <field:display field="groupe" id="s_fr_bermosa_domain_LivresGroupes_groupe" object="${livresgroupes}" z="LZ2RQvOcMHgngS2lnvgx91dLYDA="/>
+        <field:display field="livre" id="s_fr_bermosa_domain_LivresGroupes_livre" object="${livresgroupes}" z="eVyng07j32Y6jEdTcAxBeN3j2ek="/>
+    </page:show>
+</div>

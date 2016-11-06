@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_bermosa_domain_Auteur" items="${auteurs}" z="3gzvrFW0GoxVG0MdPDTnzbHLT4E=">
+        <table:table data="${auteurs}" id="l_fr_bermosa_domain_Auteur" path="/auteurs" z="URXTzn7ZRMjbMcRKqP04ki0i8oA=">
+            <table:column id="c_fr_bermosa_domain_Auteur_prenom" property="prenom" z="C8gg2qnm0hRm0KzFv2KHuuzr2eo="/>
+            <table:column id="c_fr_bermosa_domain_Auteur_nom" property="nom" z="B0ytAlezjtZy7fX3oumBlx4l24w="/>
+            <table:column date="true" dateTimePattern="${auteur_dtmodification_date_format}" id="c_fr_bermosa_domain_Auteur_dtModification" property="dtModification" z="dFVphXowFikKLptWg/DQgr4sQjg="/>
+            <table:column date="true" dateTimePattern="${auteur_dtcreation_date_format}" id="c_fr_bermosa_domain_Auteur_dtCreation" property="dtCreation" z="FyQ8d2YJ81EEc5xUbU/Pp2CkQnY="/>
+            <table:column date="true" dateTimePattern="${auteur_dtfinusage_date_format}" id="c_fr_bermosa_domain_Auteur_dtFinUsage" property="dtFinUsage" z="M+yMJoS0KQwWsXaPlD1zaLg04K0="/>
+            <table:column id="c_fr_bermosa_domain_Auteur_creerPar" property="creerPar" z="Veo5jCU1nuXjv8ho/ZN3C8ZArjc="/>
+        </table:table>
+    </page:list>
+</div>

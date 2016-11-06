@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_bermosa_domain_Acteur" items="${acteurs}" z="YvxpzO3YGo7E0MzjbevVjUTLbhI=">
+        <table:table data="${acteurs}" id="l_fr_bermosa_domain_Acteur" path="/acteurs" typeIdFieldName="username" z="ogahV7kHs8m4bhi+m68k5EtL7E0=">
+            <table:column id="c_fr_bermosa_domain_Acteur_nom" property="nom" z="lZV/RqxyuARQh5voR30Sm2wFZZI="/>
+            <table:column id="c_fr_bermosa_domain_Acteur_prenom" property="prenom" z="OKhb0CsZrVt80NOviohxqkpwiVk="/>
+            <table:column id="c_fr_bermosa_domain_Acteur_password" property="password" z="OTHt3V56hZKpH43W3lVt8nCUbWs="/>
+            <table:column date="true" dateTimePattern="${acteur_dtinscription_date_format}" id="c_fr_bermosa_domain_Acteur_dtInscription" property="dtInscription" z="pJYPCMKkpnfo2rY2zmZihbJ695c="/>
+            <table:column id="c_fr_bermosa_domain_Acteur_enabled" property="enabled" z="FlymTrnf4ajkrRE+R3vc9CAs/mM="/>
+        </table:table>
+    </page:list>
+</div>

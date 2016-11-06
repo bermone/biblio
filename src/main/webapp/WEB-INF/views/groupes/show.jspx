@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_bermosa_domain_Groupe" object="${groupe}" path="/groupes" z="LUyMpLvaq9o+3qOnUBhIXAR7hxA=">
+        <field:display field="intitule" id="s_fr_bermosa_domain_Groupe_intitule" object="${groupe}" z="6RzarvDkhmtbhebvaYhyEPXF07Y="/>
+        <field:display date="true" dateTimePattern="${groupe_dtcreation_date_format}" field="dtCreation" id="s_fr_bermosa_domain_Groupe_dtCreation" object="${groupe}" z="Ph/bDlc/9r8T1MUmqNiJGfAsOQw="/>
+        <field:display date="true" dateTimePattern="${groupe_dtfinusage_date_format}" field="dtFinUsage" id="s_fr_bermosa_domain_Groupe_dtFinUsage" object="${groupe}" z="eZmFIBG/yfwuuzHTTzrsn0Yhyyk="/>
+        <field:display date="true" dateTimePattern="${groupe_dtmodification_date_format}" field="dtModification" id="s_fr_bermosa_domain_Groupe_dtModification" object="${groupe}" z="Xa9DHSX/zv8sFK2cGsRoP11n21c="/>
+        <field:display field="creerPar" id="s_fr_bermosa_domain_Groupe_creerPar" object="${groupe}" z="dW5DwYIbHfePruCLtvR9f3I4/d0="/>
+        <field:display field="modifierPar" id="s_fr_bermosa_domain_Groupe_modifierPar" object="${groupe}" z="Zbkn2dZ30MrbswCpqyEoWW2hqWo="/>
+    </page:show>
+</div>

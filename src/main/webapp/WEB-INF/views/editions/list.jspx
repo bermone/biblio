@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_bermosa_domain_Edition" items="${editions}" z="RYQXjWS/7MXKlNRVhJvBVK15MBk=">
+        <table:table data="${editions}" id="l_fr_bermosa_domain_Edition" path="/editions" z="yM+UjSPu1qJdpibRoRFqiqoxnUw=">
+            <table:column id="c_fr_bermosa_domain_Edition_intitule" property="intitule" z="Gp/ancSkDfHKixgGBhGM2u+309g="/>
+            <table:column date="true" dateTimePattern="${edition_dtfinusage_date_format}" id="c_fr_bermosa_domain_Edition_dtFinUsage" property="dtFinUsage" z="bYq7BUJOZq+lxuwWvz1FHLl8jks="/>
+            <table:column date="true" dateTimePattern="${edition_dtcreation_date_format}" id="c_fr_bermosa_domain_Edition_dtCreation" property="dtCreation" z="2x1KBE7CmxkBgoLRoBDDJlyGxAE="/>
+            <table:column date="true" dateTimePattern="${edition_dtmodification_date_format}" id="c_fr_bermosa_domain_Edition_dtModification" property="dtModification" z="PKIEAIL3UeVm3aFnYMRcMlnFnLo="/>
+            <table:column id="c_fr_bermosa_domain_Edition_creerPar" property="creerPar" z="j3dINpSWiK838L3YI/Grm65Q+m0="/>
+        </table:table>
+    </page:list>
+</div>

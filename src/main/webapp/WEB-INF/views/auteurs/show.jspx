@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_bermosa_domain_Auteur" object="${auteur}" path="/auteurs" z="g1VRnpFZKSb5CJbI5Kr7nqg1gbA=">
+        <field:display field="prenom" id="s_fr_bermosa_domain_Auteur_prenom" object="${auteur}" z="vr4hHrBQKXX9kIdIZ5Cj20eqOp4="/>
+        <field:display field="nom" id="s_fr_bermosa_domain_Auteur_nom" object="${auteur}" z="YLQrz7dsYdEBGJrnLOE5APEDOFs="/>
+        <field:display date="true" dateTimePattern="${auteur_dtmodification_date_format}" field="dtModification" id="s_fr_bermosa_domain_Auteur_dtModification" object="${auteur}" z="PBFTBqkSADvyVg0pTZCWE+1JgLk="/>
+        <field:display date="true" dateTimePattern="${auteur_dtcreation_date_format}" field="dtCreation" id="s_fr_bermosa_domain_Auteur_dtCreation" object="${auteur}" z="57jhJ5ZjcWVlH91vLxIfQ/+yYOM="/>
+        <field:display date="true" dateTimePattern="${auteur_dtfinusage_date_format}" field="dtFinUsage" id="s_fr_bermosa_domain_Auteur_dtFinUsage" object="${auteur}" z="FABMHQZkY62gyr/i/10qEK7/HxA="/>
+        <field:display field="creerPar" id="s_fr_bermosa_domain_Auteur_creerPar" object="${auteur}" z="t3bU0ldSVSKzG59bQb3gv+OBkcc="/>
+        <field:display field="modifierPar" id="s_fr_bermosa_domain_Auteur_modifierPar" object="${auteur}" z="Ct7zRecYZnmDXrJkkj2KZp11jqs="/>
+    </page:show>
+</div>

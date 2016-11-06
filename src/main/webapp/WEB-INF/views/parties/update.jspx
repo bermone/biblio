@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_fr_bermosa_domain_Partie" modelAttribute="partie" path="/parties" versionField="Version" z="q2RbfatnydLoH1P8Ufphi8GmeRI=">
+        <field:datetime dateTimePattern="${partie_dtcreation_date_format}" field="dtCreation" id="c_fr_bermosa_domain_Partie_dtCreation" required="true" z="25rO4Nvack6/cmXsDBBsoajpRjs="/>
+        <field:input field="titre" id="c_fr_bermosa_domain_Partie_titre" required="true" z="AGXqIZxyT/DXNCAO6U9JHiWsSRY="/>
+        <field:input field="resume" id="c_fr_bermosa_domain_Partie_resume" required="true" z="3ROLpuTgqwRQtsIvViSorjowtXw="/>
+        <field:datetime dateTimePattern="${partie_dtmodification_date_format}" field="dtModification" id="c_fr_bermosa_domain_Partie_dtModification" z="6KQoHdNzwixtO1MNeIETfWNZYoA="/>
+        <field:select field="chapitre" id="c_fr_bermosa_domain_Partie_chapitre" itemValue="id" items="${chapitres}" path="/chapitres" required="true" z="t6v4DrT4wffLCvqlV9Fq/cdsQH8="/>
+        <field:select field="creerPar" id="c_fr_bermosa_domain_Partie_creerPar" itemValue="username" items="${acteurs}" path="/acteurs" required="true" z="AieRY0nZ2UQUbj7waub/xkFQKF4="/>
+        <field:select field="modifierPar" id="c_fr_bermosa_domain_Partie_modifierPar" itemValue="username" items="${acteurs}" path="/acteurs" z="PpMaJbCKyUYTuZ4soBDf920iA0s="/>
+    </form:update>
+</div>

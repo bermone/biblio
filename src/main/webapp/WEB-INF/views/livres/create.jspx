@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_fr_bermosa_domain_Livre" modelAttribute="livre" path="/livres" render="${empty dependencies}" z="CPWFM4LZ3Mumhb3sWXFxN7Cw4Pk=">
+        <field:input field="titre" id="c_fr_bermosa_domain_Livre_titre" required="true" z="GO0eOcXNVbQ8VJcdxAGdYSPcxz0="/>
+        <field:datetime dateTimePattern="${livre_dtsortie_date_format}" field="dtSortie" id="c_fr_bermosa_domain_Livre_dtSortie" required="true" z="pYmYp9fgG7UBfnSvERnY14pFy+M="/>
+        <field:input field="isbn" id="c_fr_bermosa_domain_Livre_isbn" required="true" z="vFo6hlpr1mHYu1vJdZEKJFysBBw="/>
+        <field:datetime dateTimePattern="${livre_dtmodification_date_format}" field="dtModification" id="c_fr_bermosa_domain_Livre_dtModification" z="F3k8a2tDZdj9G6oZU2XG9bFja6A="/>
+        <field:datetime dateTimePattern="${livre_dtcreation_date_format}" field="dtCreation" id="c_fr_bermosa_domain_Livre_dtCreation" required="true" z="y4oQfElczPszB28kge+wPZS8UTA="/>
+        <field:datetime dateTimePattern="${livre_dtfinusage_date_format}" field="dtFinUsage" id="c_fr_bermosa_domain_Livre_dtFinUsage" z="7hruAuhiU9hpnYkUDo5rIf3kA7M="/>
+        <field:simple field="chapitres" id="c_fr_bermosa_domain_Livre_chapitres" messageCode="entity_reference_not_managed" messageCodeAttribute="Chapitre" z="IZtzjOrdmi+v6SoLla2rKW5znNQ="/>
+        <field:select field="creerPar" id="c_fr_bermosa_domain_Livre_creerPar" itemValue="username" items="${acteurs}" path="/acteurs" required="true" z="jb4+fV1wtI3AeO2iWWt6m6RONkE="/>
+        <field:simple field="livresAuteurs" id="c_fr_bermosa_domain_Livre_livresAuteurs" messageCode="entity_reference_not_managed" messageCodeAttribute="Livres Auteurs" z="l2f9vjh+JeHOKrIgHlxy5TIEenU="/>
+        <field:simple field="livresEditions" id="c_fr_bermosa_domain_Livre_livresEditions" messageCode="entity_reference_not_managed" messageCodeAttribute="Livres Editions" z="Rz+Ur2XdZsv+q7sbLd1kCxCg1mk="/>
+        <field:simple field="livresGroupes" id="c_fr_bermosa_domain_Livre_livresGroupes" messageCode="entity_reference_not_managed" messageCodeAttribute="Livres Groupes" z="3WigN6DQ8uc2sce0EKrEDyyGy3Q="/>
+        <field:select field="modifierPar" id="c_fr_bermosa_domain_Livre_modifierPar" itemValue="username" items="${acteurs}" path="/acteurs" z="b7J4CiV6NWr9nAHWJVe4xjBn+NU="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_fr_bermosa_domain_Livre" render="${not empty dependencies}" z="JPUwuVL2FprJYrSZABLkcHfl1Yo="/>
+</div>

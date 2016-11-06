@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_fr_bermosa_domain_Acteur" modelAttribute="acteur" path="/acteurs" render="${empty dependencies}" z="HqTmGAyRB/loF4Ie6CiOXMzkP+k=">
+        <field:input field="nom" id="c_fr_bermosa_domain_Acteur_nom" required="true" z="u0bsI0CzXAJf9IL1uSizhLRcOQs="/>
+        <field:input field="prenom" id="c_fr_bermosa_domain_Acteur_prenom" required="true" z="MhDrswoRCAXmM8fUt+8Igm1mKQ4="/>
+        <field:input field="password" id="c_fr_bermosa_domain_Acteur_password" required="true" z="YGAoKiXaZpqhjWTUczH3LvNMd08="/>
+        <field:datetime dateTimePattern="${acteur_dtinscription_date_format}" field="dtInscription" id="c_fr_bermosa_domain_Acteur_dtInscription" required="true" z="QPvlVDeHpGQr1O7vlVt578jKxBs="/>
+        <field:checkbox field="enabled" id="c_fr_bermosa_domain_Acteur_enabled" z="nGQZv37fEy5xyfG05w353177wIg="/>
+        <field:input field="username" id="c_fr_bermosa_domain_Acteur_username" required="true" z="umOtluAXezmGiIKxWVmL58VRMIg="/>
+        <field:simple field="roles" id="c_fr_bermosa_domain_Acteur_roles" messageCode="entity_reference_not_managed" messageCodeAttribute="Role" z="24SvlDpgwL6w2uuml0NWG9svfws="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_fr_bermosa_domain_Acteur" render="${not empty dependencies}" z="AKfprJOS4O6CxZyHSz1hkf/ALWA="/>
+</div>

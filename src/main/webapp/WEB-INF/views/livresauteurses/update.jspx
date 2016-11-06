@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_fr_bermosa_domain_LivresAuteurs" modelAttribute="livresAuteurs" path="/livresauteurses" versionField="Version" z="P843/rv7XJYU/Z2qyf7WL0r6GA8=">
+        <field:datetime dateTimePattern="${livresAuteurs_dtfinusage_date_format}" field="dtFinUsage" id="c_fr_bermosa_domain_LivresAuteurs_dtFinUsage" z="fNS3CykP1y3r1jYkTg8XQ/mFlM4="/>
+        <field:datetime dateTimePattern="${livresAuteurs_dtcreation_date_format}" field="dtCreation" id="c_fr_bermosa_domain_LivresAuteurs_dtCreation" required="true" z="Dy3VylTvkgVvOuXeI8E8i7GhS1w="/>
+        <field:select field="auteur" id="c_fr_bermosa_domain_LivresAuteurs_auteur" itemValue="id" items="${auteurs}" path="/auteurs" required="true" z="fzf+ojIGLeEiev2jvPP6OM+ooRM="/>
+        <field:select field="livre" id="c_fr_bermosa_domain_LivresAuteurs_livre" itemValue="id" items="${livres}" path="/livres" required="true" z="h0BmztTw+4KYQ3IlU+PpySAW3AY="/>
+    </form:update>
+</div>

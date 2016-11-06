@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_bermosa_domain_Edition" object="${edition}" path="/editions" z="VKiOrDKP4Km2FkGDDnqXBuQAKaA=">
+        <field:display field="intitule" id="s_fr_bermosa_domain_Edition_intitule" object="${edition}" z="e4Wb56kuZ41oRaw2EowxsOsqcJ8="/>
+        <field:display date="true" dateTimePattern="${edition_dtfinusage_date_format}" field="dtFinUsage" id="s_fr_bermosa_domain_Edition_dtFinUsage" object="${edition}" z="OJ9jx224Mh/E+OMCX//3piBTUd0="/>
+        <field:display date="true" dateTimePattern="${edition_dtcreation_date_format}" field="dtCreation" id="s_fr_bermosa_domain_Edition_dtCreation" object="${edition}" z="mAKNnhhcP41FhJBuw7CR/k2Umss="/>
+        <field:display date="true" dateTimePattern="${edition_dtmodification_date_format}" field="dtModification" id="s_fr_bermosa_domain_Edition_dtModification" object="${edition}" z="TW1tRqo0kLlkNfz/Wcn4zVfSjNM="/>
+        <field:display field="creerPar" id="s_fr_bermosa_domain_Edition_creerPar" object="${edition}" z="ZcwOYUSmq/fFPcbJ3SvSfpo38yE="/>
+        <field:display field="modifierPar" id="s_fr_bermosa_domain_Edition_modifierPar" object="${edition}" z="tVuVlZvJj1Wg0yC7IveEVsbWW4o="/>
+    </page:show>
+</div>

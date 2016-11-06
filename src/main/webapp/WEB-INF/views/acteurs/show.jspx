@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_bermosa_domain_Acteur" object="${acteur}" path="/acteurs" z="xRROCQJVbvFL7m6OHTGZ0cxvccA=">
+        <field:display field="nom" id="s_fr_bermosa_domain_Acteur_nom" object="${acteur}" z="locdPehvUIyI9zDNy/InriFVtII="/>
+        <field:display field="prenom" id="s_fr_bermosa_domain_Acteur_prenom" object="${acteur}" z="mVdy2ocR1GS8iZ036i0rTZ24cO8="/>
+        <field:display field="password" id="s_fr_bermosa_domain_Acteur_password" object="${acteur}" z="G5+F7eDUh3f9EoLeSs9//xK1/Jc="/>
+        <field:display date="true" dateTimePattern="${acteur_dtinscription_date_format}" field="dtInscription" id="s_fr_bermosa_domain_Acteur_dtInscription" object="${acteur}" z="JKWRc6dFz2xV7PfxtwFbBvvZIio="/>
+        <field:display field="enabled" id="s_fr_bermosa_domain_Acteur_enabled" object="${acteur}" z="VT1G2N9q4JtSm2hyUy9kJPrx0cY="/>
+    </page:show>
+</div>

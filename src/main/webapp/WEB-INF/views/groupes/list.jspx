@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_bermosa_domain_Groupe" items="${groupes}" z="6bIkXBdSXgFTpD0RDUUPkJJyvoM=">
+        <table:table data="${groupes}" id="l_fr_bermosa_domain_Groupe" path="/groupes" z="b2VgGPTwXXS+FMcw+/soSdKyv9s=">
+            <table:column id="c_fr_bermosa_domain_Groupe_intitule" property="intitule" z="9jIymij5x02hPkCi9jH7mIynmww="/>
+            <table:column date="true" dateTimePattern="${groupe_dtcreation_date_format}" id="c_fr_bermosa_domain_Groupe_dtCreation" property="dtCreation" z="KHdZpDmSQQsXM/K0fszbQvZx0ss="/>
+            <table:column date="true" dateTimePattern="${groupe_dtfinusage_date_format}" id="c_fr_bermosa_domain_Groupe_dtFinUsage" property="dtFinUsage" z="wwtf9FRo35dvFYFwMu/j/3CE3/s="/>
+            <table:column date="true" dateTimePattern="${groupe_dtmodification_date_format}" id="c_fr_bermosa_domain_Groupe_dtModification" property="dtModification" z="voOXCVK0x86/3zECdsg7Q9EgLtc="/>
+            <table:column id="c_fr_bermosa_domain_Groupe_creerPar" property="creerPar" z="iDjo487VN6MqqkXaOtxhJzypYDk="/>
+        </table:table>
+    </page:list>
+</div>

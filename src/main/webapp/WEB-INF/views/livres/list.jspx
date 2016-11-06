@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_bermosa_domain_Livre" items="${livres}" z="vlPkohVbNc+IE0DZmWklTz89WK0=">
+        <table:table data="${livres}" id="l_fr_bermosa_domain_Livre" path="/livres" z="RoS91gAuj+YeS9SKSX7zZ8F/QCI=">
+            <table:column id="c_fr_bermosa_domain_Livre_titre" property="titre" z="SCnVML0sN9c4xdDJewmmkiVo/K8="/>
+            <table:column date="true" dateTimePattern="${livre_dtsortie_date_format}" id="c_fr_bermosa_domain_Livre_dtSortie" property="dtSortie" z="hxyg7gEm/ngUMS4TtiDJEXJfxto="/>
+            <table:column id="c_fr_bermosa_domain_Livre_isbn" property="isbn" z="Qlw/MspuuO3lRqXERqVIpA0i6II="/>
+            <table:column date="true" dateTimePattern="${livre_dtmodification_date_format}" id="c_fr_bermosa_domain_Livre_dtModification" property="dtModification" z="JvTKtS/O0xJLW+u0fUmaWHF/3tU="/>
+            <table:column date="true" dateTimePattern="${livre_dtcreation_date_format}" id="c_fr_bermosa_domain_Livre_dtCreation" property="dtCreation" z="a/HAc82t0sZac3fNyFZu9xndHb8="/>
+            <table:column date="true" dateTimePattern="${livre_dtfinusage_date_format}" id="c_fr_bermosa_domain_Livre_dtFinUsage" property="dtFinUsage" z="KGlv9TIzPgUvkoXXSUaNhJzK95M="/>
+        </table:table>
+    </page:list>
+</div>

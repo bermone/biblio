@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_bermosa_domain_Chapitre" items="${chapitres}" z="CwRfPzqb4k/rcxBVSDYBbdVM6uo=">
+        <table:table data="${chapitres}" id="l_fr_bermosa_domain_Chapitre" path="/chapitres" z="0mQ1LJSDqLyak5Td4/wlhN0R+BI=">
+            <table:column date="true" dateTimePattern="${chapitre_dtmodification_date_format}" id="c_fr_bermosa_domain_Chapitre_dtModification" property="dtModification" z="DJL21+tGsNJchLGOSi9rUism/Xc="/>
+            <table:column id="c_fr_bermosa_domain_Chapitre_titre" property="titre" z="aVoAD5c46rzWG9hIdwHeNDcs0gQ="/>
+            <table:column date="true" dateTimePattern="${chapitre_dtcreation_date_format}" id="c_fr_bermosa_domain_Chapitre_dtCreation" property="dtCreation" z="nofvgDmlIuO7Ck9QmvUqva6yVNA="/>
+            <table:column id="c_fr_bermosa_domain_Chapitre_resume" property="resume" z="I4MSYMZXCO6/CGS/u5jDI10jCs8="/>
+            <table:column id="c_fr_bermosa_domain_Chapitre_creerPar" property="creerPar" z="rQL9v6eutr4APO/SnZV9bSh7uGQ="/>
+            <table:column id="c_fr_bermosa_domain_Chapitre_livre" property="livre" z="Ei27IYG3Y1qDgH1cenoXq8xuSQk="/>
+        </table:table>
+    </page:list>
+</div>

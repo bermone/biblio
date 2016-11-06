@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_bermosa_domain_Partie" items="${parties}" z="eeGietEXb0hZAW418ygfhJ2eRCs=">
+        <table:table data="${parties}" id="l_fr_bermosa_domain_Partie" path="/parties" z="1xAZCgD8+FBRx/vhtwWdhjDlGec=">
+            <table:column date="true" dateTimePattern="${partie_dtcreation_date_format}" id="c_fr_bermosa_domain_Partie_dtCreation" property="dtCreation" z="R4ic5GbtwSSjiMTIsnb/EdxWtMs="/>
+            <table:column id="c_fr_bermosa_domain_Partie_titre" property="titre" z="wUqwXtmlG5Npfq+WW/1nld5dmDc="/>
+            <table:column id="c_fr_bermosa_domain_Partie_resume" property="resume" z="uvo/kVOxRZmZcBysTvlO36Ju0DY="/>
+            <table:column date="true" dateTimePattern="${partie_dtmodification_date_format}" id="c_fr_bermosa_domain_Partie_dtModification" property="dtModification" z="vRt2HIR1AowGJC7+SmKJDkVk9Gw="/>
+            <table:column id="c_fr_bermosa_domain_Partie_chapitre" property="chapitre" z="mJ70H2qPPvXKadSJzTd4TsHLklI="/>
+            <table:column id="c_fr_bermosa_domain_Partie_creerPar" property="creerPar" z="BJ9QS9u/v8avPZnEkfotwawqwv8="/>
+        </table:table>
+    </page:list>
+</div>
