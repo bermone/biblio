@@ -28,8 +28,7 @@
   </span>
   <util:theme/>
 
-  <spring:message var="app_version" code="maven.version" htmlEscape="false"/>
-  <c:out value=" | version ${app_version}"/>
+
   
   <spring:url value="/resources/images/springsource-logo.png" var="logo"/>
   <spring:message code="global_sponsored" htmlEscape="false" var="sponsored"/>

@@ -1,32 +1,15 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
     
     <display-name>Bibliotheque</display-name>    
-    <description>Roo generated Bibliotheque application</description>
+    <description>Bibliotheque application</description>
 	
 	<!-- The definition of the Root Spring Container shared by all Servlets and Filters -->
 	<env-entry>
 		<env-entry-name>propertyPlaceholderRootPath</env-entry-name>
 		<env-entry-type>java.lang.String</env-entry-type>
 		<env-entry-value>classpath*:META-INF/properties/</env-entry-value>
-	</env-entry>
-	<env-entry>
-		<env-entry-name>log4jConfigLocation</env-entry-name>
-		<env-entry-type>java.lang.String</env-entry-type>
-		<env-entry-value>classpath:log4j.properties</env-entry-value>
-	</env-entry>
-	<env-entry>
-		<env-entry-name>spring.profiles.active</env-entry-name>
-		<env-entry-type>java.lang.String</env-entry-type>
-		<!-- allowed profiles are DEV or PROD -->
-		<env-entry-value>DEV</env-entry-value>
-	</env-entry>
-	<env-entry>
-		<env-entry-name>log4jRefreshInterval</env-entry-name>
-		<env-entry-type>java.lang.Long</env-entry-type>
-		<!-- refresh is enabled only for values strictly above zero -->
-		<env-entry-value>-1</env-entry-value>
 	</env-entry>
 	
 	<!-- Enable escaping of form submission contents -->
@@ -38,6 +21,26 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath*:META-INF/spring/applicationContext*.xml</param-value>
     </context-param>
+    
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    
+    <!-- Handles Spring requests -->
+    <servlet>
+        <servlet-name>Bibliotheque</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>WEB-INF/spring/webmvc-config.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Bibliotheque</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
     
     <filter>
         <filter-name>CharacterEncodingFilter</filter-name>
@@ -82,27 +85,7 @@
         <filter-name>springSecurityFilterChain</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-    
-    <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
-    
-    <!-- Handles Spring requests -->
-    <servlet>
-        <servlet-name>Bibliotheque</servlet-name>
-        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-        <init-param>
-            <param-name>contextConfigLocation</param-name>
-            <param-value>WEB-INF/spring/webmvc-config.xml</param-value>
-        </init-param>
-        <load-on-startup>0</load-on-startup>
-    </servlet>
-    
-    <servlet-mapping>
-        <servlet-name>Bibliotheque</servlet-name>
-        <url-pattern>/</url-pattern>
-    </servlet-mapping>
-    
+        
     <!-- Handles Web Services requests -->
 	<servlet>
 		<servlet-name>cxf</servlet-name>

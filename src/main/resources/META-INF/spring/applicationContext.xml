@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
-	xmlns:aop="http://www.springframework.org/schema/aop"
-	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:mvc="http://www.springframework.org/schema/mvc"
-	xmlns:tx="http://www.springframework.org/schema/tx"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://cxf.apache.org/configuration/beans http://cxf.apache.org/schemas/configuration/cxf-beans.xsd
-		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
-		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
-		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
-		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cxf.apache.org/configuration/beans http://cxf.apache.org/schemas/configuration/cxf-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
     <!--
         This will automatically locate any and all property files you have
         within your classpath, provided they fall under the META-INF/spring
@@ -18,16 +7,13 @@
         then be used within application context files in the form of
         ${propertyKey}.
     -->
-    <beans:beans profile="DEV">
-        <beans:bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-            <beans:property name="locations">
-                <beans:list>
-                    <beans:value>classpath:META-INF/properties/*.properties</beans:value>
-                </beans:list>
-            </beans:property>
-        </beans:bean>  
-	</beans:beans>
-	<beans:beans>
+        <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+            <property name="locations">
+                <list>
+                    <value>classpath:META-INF/properties/*.properties</value>
+                </list>
+            </property>
+        </bean>
 	    <!--
 	        Turn on AspectJ @Configurable support. As a result, any time you
 	        instantiate an object, Spring will attempt to perform dependency
@@ -68,59 +54,58 @@
 	        <context:exclude-filter expression=".*_Roo_.*" type="regex"/>
 	        <context:exclude-filter expression="org.springframework.stereotype.Controller" type="annotation"/>
 	    </context:component-scan>
-	    <beans:bean class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" id="dataSource">
-	        <beans:property name="driverClassName" value="${database.driverClassName}"/>
-	        <beans:property name="url" value="${database.url}"/>
-	        <beans:property name="username" value="${database.username}"/>
-	        <beans:property name="password" value="${database.password}"/>
-	        <beans:property name="testOnBorrow" value="true"/>
-	        <beans:property name="testOnReturn" value="true"/>
-	        <beans:property name="testWhileIdle" value="true"/>
-	        <beans:property name="timeBetweenEvictionRunsMillis" value="1800000"/>
-	        <beans:property name="numTestsPerEvictionRun" value="3"/>
-	        <beans:property name="minEvictableIdleTimeMillis" value="1800000"/>
-	        <beans:property name="validationQuery" value="SELECT 1 FROM DUAL"/>
-	    </beans:bean>
-	    <beans:bean class="org.springframework.orm.jpa.JpaTransactionManager" id="transactionManager">
-	        <beans:property name="entityManagerFactory" ref="entityManagerFactory"/>
-	    </beans:bean>
+	    <bean class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" id="dataSource">
+	        <property name="driverClassName" value="${database.driverClassName}"/>
+	        <property name="url" value="${database.url}"/>
+	        <property name="username" value="${database.username}"/>
+	        <property name="password" value="${database.password}"/>
+	        <property name="testOnBorrow" value="true"/>
+	        <property name="testOnReturn" value="true"/>
+	        <property name="testWhileIdle" value="true"/>
+	        <property name="timeBetweenEvictionRunsMillis" value="1800000"/>
+	        <property name="numTestsPerEvictionRun" value="3"/>
+	        <property name="minEvictableIdleTimeMillis" value="1800000"/>
+	        <property name="validationQuery" value="SELECT 1 FROM DUAL"/>
+	    </bean>
+	    <bean class="org.springframework.orm.jpa.JpaTransactionManager" id="transactionManager">
+	        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+	    </bean>
 	    <tx:annotation-driven mode="aspectj" transaction-manager="transactionManager"/>
-	    <beans:bean class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean" id="entityManagerFactory">
-	        <beans:property name="persistenceUnitName" value="persistenceUnit"/>
-	        <beans:property name="dataSource" ref="dataSource"/>
-	        <beans:property name="packagesToScan" value="${jpa.scan.packages}"/>
-	        <beans:property name="jpaVendorAdapter">
-                <beans:bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
-            </beans:property>
-            <beans:property name="jpaProperties">
-                <beans:props>
+	    <bean class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean" id="entityManagerFactory">
+	        <property name="persistenceUnitName" value="persistenceUnit"/>
+	        <property name="dataSource" ref="dataSource"/>
+	        <property name="packagesToScan" value="${jpa.scan.packages}"/>
+	        <property name="jpaVendorAdapter">
+                <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
+            </property>
+            <property name="jpaProperties">
+                <props>
                     <!-- shared cache modes: ALL, ENABLE_SELECTIVE, DISABLE_SELECTIVE, NONE -->
-                    <beans:prop key="javax.persistence.sharedCache.mode">${jpa.cache.mode}</beans:prop>
+                    <prop key="javax.persistence.sharedCache.mode">${jpa.cache.mode}</prop>
                     <!-- value="create" to build a new database on each run; value="update" to modify an existing database; value="create-drop" means the same as "create" but also drops tables when Hibernate closes; value="validate" makes no changes to the database -->
-                    <beans:prop key="hibernate.hbm2ddl.auto">${jpa.database.schema.DEV:off}</beans:prop>
-                    <beans:prop key="hibernate.ejb.naming_strategy">org.hibernate.cfg.ImprovedNamingStrategy</beans:prop>
-                    <beans:prop key="hibernate.connection.charSet">UTF-8</beans:prop>
-                    <beans:prop key="hibernate.dialect">${database.dialect}</beans:prop>
+                    <prop key="hibernate.hbm2ddl.auto">${jpa.database.schema.DEV:off}</prop>
+                    <prop key="hibernate.ejb.naming_strategy">org.hibernate.cfg.ImprovedNamingStrategy</prop>
+                    <prop key="hibernate.connection.charSet">UTF-8</prop>
+                    <prop key="hibernate.dialect">${database.dialect}</prop>
                     <!-- Envers integration for audit functionalities -->
-                    <beans:prop key="hibernate.auditable">${jpa.audit.enabled}</beans:prop>
+                    <prop key="hibernate.auditable">${jpa.audit.enabled}</prop>
                     <!-- Search/Lucene integration for advanced search -->
-                    <beans:prop key="hibernate.search.autoregister_listeners">${jpa.search.enabled}</beans:prop>
-                    <beans:prop key="hibernate.search.default.directory_provider">${database.search.provider}</beans:prop>
-                    <beans:prop key="hibernate.search.default.indexBase">${database.search.indexBase}</beans:prop>
-                </beans:props>
-            </beans:property>
-	    </beans:bean>
+                    <prop key="hibernate.search.autoregister_listeners">${jpa.search.enabled}</prop>
+                    <prop key="hibernate.search.default.directory_provider">${database.search.provider}</prop>
+                    <prop key="hibernate.search.default.indexBase">${database.search.indexBase}</prop>
+                </props>
+            </property>
+	    </bean>
 	    
-	     <beans:bean class="org.dozer.spring.DozerBeanMapperFactoryBean" id="mapper">
-	            <beans:property name="mappingFiles" value="classpath*:META-INF/*Mapping.xml"/>
-	      </beans:bean>
-	      <beans:bean class="org.springframework.transaction.interceptor.TransactionInterceptor" id="transactionInterceptor">
-	      	<beans:property name="transactionManager" ref="transactionManager"/>
-	        <beans:property name="transactionAttributes">
-	        	<beans:props>
-	             	<beans:prop key="save">PROPAGATION_REQUIRED</beans:prop>
-	             </beans:props>
-	        </beans:property>
-	       </beans:bean>
-	</beans:beans>
-</beans:beans>
+	     <bean class="org.dozer.spring.DozerBeanMapperFactoryBean" id="mapper">
+	            <property name="mappingFiles" value="classpath*:META-INF/*Mapping.xml"/>
+	      </bean>
+	      <bean class="org.springframework.transaction.interceptor.TransactionInterceptor" id="transactionInterceptor">
+	      	<property name="transactionManager" ref="transactionManager"/>
+	        <property name="transactionAttributes">
+	        	<props>
+	             	<prop key="save">PROPAGATION_REQUIRED</prop>
+	             </props>
+	        </property>
+	       </bean>
+</beans>
